@@ -1,0 +1,182 @@
+:root {
+    --blurColor: #2bd1d1;
+    --darkColor: #3a3053;
+    --lightColor: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 18px;
+
+}
+
+.app {
+    text-align: justify;
+}
+
+.splitText {
+    font-weight: bolder;
+    font-size: 60px;
+    letter-spacing: 0.1px;
+    line-height: 1.25;
+    /* المسافة بين الأسطر */
+    color: #302e39;
+}
+
+.firstLine {
+    display: block;
+    /* عرض السطر الأول */
+}
+
+.secondLine {
+    display: block;
+    /* عرض السطر الثاني */
+}
+
+
+/* تنسيق الزر */
+.btn {
+    background-color: var(--blurColor) !important;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+/* تأثير التمرير على الزر */
+.btn:hover {
+    background-color: #249a9a !important;
+    transform: scale(1.05);
+    /* تأثير تكبير بسيط */
+    color: #ffffff !important;
+}
+
+/* تنسيق النص */
+.text {
+    text-align: left;
+    /* محاذاة النص إلى اليسار */
+    font-family: var(--font-family);
+}
+
+/* تنسيق الصورة */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    /* التأكد من أن الصورة تتناسب مع الحاوية */
+}
+
+/* استجابة للأجهزة الصغيرة */
+@media (max-width: 768px) {
+
+    .ms-5,
+    .me-5 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .row {
+        flex-direction: column;
+        /* ترتيب الأقسام بشكل رأسي */
+        text-align: center;
+        /* محاذاة النصوص في المنتصف */
+    }
+
+    .col-md-6:nth-child(2) {
+        order: -1;
+        /* جعل الصورة تظهر أولاً في الشاشات الصغيرة */
+    }
+
+    .col-md-6 {
+        text-align: center;
+        /* محاذاة المحتوى في منتصف الأعمدة الصغيرة */
+        margin-bottom: 20px;
+        /* إضافة مسافة بين الأقسام */
+    }
+
+    .btn {
+        width: 100%;
+        /* جعل الزر يعرض بالكامل في الأجهزة الصغيرة */
+    }
+}
+
+.input {
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('../../images/bg-shorten-desktop.svg');
+    background-color: var(--darkColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 30vh;
+
+}
+
+.input input {
+    flex: 1;
+    /* تمدد الحقل النصي لملء المساحة المتاحة */
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input span {
+    margin-left: 1rem;
+    color: red;
+    /* النص يظهر باللون الأحمر */
+    font-size: 0.9rem;
+}
+
+.input button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    /* لون الزر */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.errorPlaceholder::placeholder {
+    color: #ff6b6b;
+    /* لون الأحمر لإبراز الخطأ */
+}
+
+.errorPlaceholder {
+    border-color: #ff6b6b;
+    /* تغيير لون الحدود عند الخطأ */
+}
+
+.short {
+    color: var(--blurColor);
+}
+
+.original {
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+.links{
+border-bottom: solid 1px black;
+padding:20px 0;
+}
+
+@media (max-width: 768px) {
+    .short {
+        display: block;
+    }
+    .send{
+        margin-top:15px ;
+        align-items: center;
+        justify-content: center;
+        margin-left:0 !important ;
+    }
+}
+

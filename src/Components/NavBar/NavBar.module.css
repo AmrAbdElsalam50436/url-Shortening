@@ -1,0 +1,80 @@
+:root {
+  --blurColor: #2bd1d1;
+  --darkColor: #3a3053;
+  --lightColor: #ffffff;
+}
+
+/* Main Navigation Bar */
+.nav {
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* Active Link Styles */
+.active {
+  color: var(--blurColor) !important;
+  font-weight: bold;
+}
+
+/* SignUp Button Styles */
+.signUp {
+  background-color: var(--blurColor);
+  color: var(--lightColor);
+  padding: 10px 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.signUp:hover {
+  background-color: #249a9a;
+  transform: scale(1.05);
+}
+
+.navCollapse {
+  padding: 10px 20px;
+  background-color: var(--lightColor);
+  color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navCollapse {
+    background-color: var(--darkColor);
+  }
+
+  .navCollapse.show {
+    background-color: var(--darkColor);
+  }
+
+  .navCollapse a {
+    color: var(--lightColor) !important;
+    font-weight: bold;
+  }
+
+  .navCollapse a:hover {
+    color: var(--blurColor) !important;
+  }
+
+  .navbar-toggler {
+    border: 1px solid var(--darkColor);
+    background-color: var(--darkColor);
+  }
+
+  .navbar-toggler-icon {
+    background-color: var(--lightColor);
+    border-radius: 2px;
+    width: 20px;
+    height: 2px;
+  }
+}
+.navLink{
+  color: #d1d1d1;
+  }
