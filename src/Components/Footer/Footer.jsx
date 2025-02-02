@@ -68,7 +68,6 @@ const Footer = () => {
 };
 
 export default Footer;
-=======
 import React from 'react';
 import styles from './Footer.module.css';
 import logo from '../../images/logo.svg';
@@ -139,4 +138,4 @@ const Footer = () => {
 };
 
 export default Footer;
->>>>>>> 759199af575d08d5331fdde1c2f8fa7e6af0c31b
+
