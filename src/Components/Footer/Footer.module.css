@@ -50,3 +50,56 @@
     /* تغيير اللون عند hover */
     cursor: pointer;
 }
+
+:root {
+    --darkColorFooter: #232027;
+    --textColor: #ffffff;
+    --linkHoverColor: #2acfcf;
+}
+
+.footer {
+    background-color: var(--darkColorFooter);
+    color: var(--textColor);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.footerLink {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--textColor);
+    margin-bottom: 10px;
+}
+
+.footerLink:hover {
+    color: var(--linkHoverColor);
+}
+
+.footerList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footerList li {
+    margin-bottom: 8px;
+}
+
+.socialIcon {
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    /* تأثير سلس */
+}
+
+.socialIcon:hover {
+    transform: scale(1.1);
+    /* تكبير عند hover */
+    fill: var(--blurColor);
+    /* تغيير اللون عند hover */
+    cursor: pointer;
+}
