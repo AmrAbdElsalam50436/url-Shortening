@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const NavBar = () => {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-light bg-white ${styles.nav}`}>
+    <nav className={`navbar navbar-expand-lg navbar-light bg-white sticky-top ${styles.nav}`}>
   <div className="container">
     <motion.div
       initial={{ opacity: 0, y: -50 }} // الوضع الأولي

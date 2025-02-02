@@ -34,15 +34,19 @@
 .footerList li {
     margin-bottom: 8px;
 }
+
 .socialIcon {
-  width: 30px;
-  height: 30px;
-  margin: 0 8px;
-  transition: fill 0.3s ease, transform 0.3s ease; /* تأثير سلس */
+    width: 30px;
+    height: 30px;
+    margin: 0 8px;
+    transition: fill 0.3s ease, transform 0.3s ease;
+    /* تأثير سلس */
 }
 
 .socialIcon:hover {
-  transform: scale(1.1); /* تكبير عند hover */
-  fill: var(--blurColor); /* تغيير اللون عند hover */
-  cursor: pointer;
+    transform: scale(1.1);
+    /* تكبير عند hover */
+    fill: var(--blurColor);
+    /* تغيير اللون عند hover */
+    cursor: pointer;
 }

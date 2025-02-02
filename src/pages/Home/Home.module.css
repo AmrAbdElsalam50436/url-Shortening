@@ -123,6 +123,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
+
 }
 
 .input span {
@@ -163,20 +164,104 @@
     word-wrap: break-word;
 }
 
-.links{
-border-bottom: solid 1px black;
-padding:20px 0;
+.links {
+    border-bottom: solid 1px black;
+    padding: 20px 0;
 }
 
 @media (max-width: 768px) {
     .short {
         display: block;
     }
-    .send{
-        margin-top:15px ;
+
+    .send {
+        margin-top: 15px;
         align-items: center;
         justify-content: center;
-        margin-left:0 !important ;
+        margin-left: 0 !important;
     }
 }
+.container {
+    position: relative; /* ضروري لتحديد المرجع لـ ::after */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: transparent; /* تأكد من عدم وجود لون خلفية افتراضي */
+}
 
+.container::after {
+    content: '';
+    position: absolute;
+    background-color: #F0F1F6;
+    top: 150px; /* يبدأ من منتصف العنصر */
+    left: 0;
+    width: 100%; /* يغطي عرض العنصر بالكامل */
+    height: calc(100% - 100px); /* يغطي الجزء المتبقي بعد 100px */
+    z-index: -1; /* يجعله تحت محتوى العنصر */
+}
+
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.cardIcon {
+    background: #3b3054;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; /* لمحاذاة الصورة عموديًا في المنتصف */
+    justify-content: center; /* لمحاذاة الصورة أفقيًا في المنتصف */
+    margin-bottom: 10px;
+}
+
+.cardIcon img {
+    max-width: 80%; /* لضبط حجم الصورة داخل الدائرة بحيث تبقى في المنتصف */
+    max-height: 80%; /* يضمن أن الصورة تتناسب مع حجم الدائرة */
+}
+
+
+.cardTitle {
+    font-weight: bold;
+}
+
+.cardText {
+    color: #777;
+}
+
+.boostSection {
+    background-image: url('../../images/bg-shorten-desktop.svg');
+    background-color: var(--darkColor);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.btn {
+    margin-top: 10px;
+}
